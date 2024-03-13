@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pasta</title>
+
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="relative">
+    <div class="absolute back-pattern"></div>
+
+    <main class="main">
+        <section class="intro">
+            <div class="container section">
+                <h1 class="title">
+                    About Pasta
+                </h1>
+
+                <span>
+                    A tool to check wich pasta you have and what kind of dishes you can make with them. You can also use this to get inspirational receipes with pasta in them!
+                </span>
+            </div>
+        </section>
+
+
+        <section class="container section flex between gap-l">
+            <div>
+                <button class="btn" id="start" type='button'>
+                    Check it
+                </button>
+
+                <div id='webcam-container' class="webcam"></div>
+
+                <div id='label-container' class="pasta-label"></div>
+            </div>
+
+            <div class="col-right">
+                <h2>
+                    Receipes for this pasta:
+                </h2>
+
+                <ul id="receipe-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container section footer__top">
+            <span>
+                Made with HTML, CSS, JS and implementation of Teachable Machine
+            </span>
+
+            <div class="footer__content flex between">
+                <span>
+                    Kyandro De Volder
+                </span>
+
+                <span>
+                    IT-Exploration | 2024
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.3/dist/teachablemachine-image.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
